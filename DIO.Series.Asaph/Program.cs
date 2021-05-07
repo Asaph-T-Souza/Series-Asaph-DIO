@@ -48,19 +48,35 @@ namespace DIO.Series.Asaph
         private static void ExcluirSerie()
         {
             Console.Write("Digite o id da série: ");
-            int indiceSerie = int.Parse(Console.ReadLine());
-
-            repositorio.Exclui(indiceSerie);
+            try
+            {
+                int indiceSerie = int.Parse(Console.ReadLine());
+                repositorio.Exclui(indiceSerie);
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("Id Invalido");
+            }
+            
         }
 
         private static void VisualizarSerie()
         {
             Console.Write("Digite o id da série: ");
-            int indiceSerie = int.Parse(Console.ReadLine());
+            try
+            {
 
-            var serie = repositorio.RetornaPorId(indiceSerie);
 
-            Console.WriteLine(serie);
+                int indiceSerie = int.Parse(Console.ReadLine());
+
+                var serie = repositorio.RetornaPorId(indiceSerie);
+
+                Console.WriteLine(serie);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine(" - ID Invalido");
+            }
         }
 
         private static void AtualizarSerie()
@@ -148,23 +164,88 @@ namespace DIO.Series.Asaph
 
         private static void Insere_Altera(ref int entradaGenero, ref string entradaTitulo, ref int entradaAno, ref string entradaDescricao)
         {
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
+
+            #region "Titulo"  
+            while (true)
+            {
+                Console.Write("Digite o Título da Série: ");
+
+                string entradaString = Console.ReadLine();
+                if (entradaString == "")
+                {
+                    Console.WriteLine("Titulo Invalido");
+                    continue;
+                }
+                else
+                {
+                    entradaTitulo = entradaString;
+                    break;
+                }
+            }
+            #endregion
+
+            #region "Genero"
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
             }
-            Console.Write("Digite o gênero entre as opções acima: ");
-            entradaGenero = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o Título da Série: ");
-            entradaTitulo = Console.ReadLine();
+            while (true)
+            {
+                Console.Write("Digite o gênero entre as opções acima: ");
 
-            Console.Write("Digite o Ano de Início da Série: ");
-            entradaAno = int.Parse(Console.ReadLine());
+                string entradaString = Console.ReadLine();
+                if (Int32.TryParse(entradaString, out int value))
+                {
+                    entradaGenero = value;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Genero Invalido");
+                    continue;
+                }
+            }
+            #endregion
 
-            Console.Write("Digite a Descrição da Série: ");
-            entradaDescricao = Console.ReadLine();
+            #region "Ano"
+            while (true)
+            {
+                Console.Write("Digite o Ano de Início da Série: ");
+
+                string entradaString = Console.ReadLine();
+                if (Int32.TryParse(entradaString, out int value))
+                {
+                    entradaAno = value;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Ano Invalido");
+                    continue;
+                }
+            }
+            #endregion
+
+            #region "Descrição"
+            while (true)
+            {
+                Console.Write("Digite a Descrição da Série: ");
+
+                string entradaString = Console.ReadLine();
+                if (entradaString == "")
+                {
+                    Console.WriteLine("Descrição Invalida");
+                    continue;
+                }
+                else
+                {
+                    entradaDescricao = entradaString;
+                    break;
+                }
+            }
+            #endregion
+
         }
 
         private static string ObterOpcaoUsuario()

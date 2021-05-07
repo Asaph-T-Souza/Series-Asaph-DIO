@@ -16,7 +16,14 @@ namespace DIO.Series.Asaph
 
 		public void Exclui(int id)
 		{
-			listaSerie[id].Excluir();
+            try
+            {
+				listaSerie[id].Excluir();
+			}
+            catch
+            {
+				Console.WriteLine("Id Inexisente");
+            }
 		}
 
 		public void Insere(Serie objeto)
@@ -36,7 +43,15 @@ namespace DIO.Series.Asaph
 
 		public Serie RetornaPorId(int id)
 		{
+            try
+            {           
 			return listaSerie[id];
+			}
+			catch(ArgumentOutOfRangeException)
+            {
+				Console.WriteLine("Id Inexistente");
+				return null;
+            }
 		}
 	}
 }
