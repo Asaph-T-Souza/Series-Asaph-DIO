@@ -1,0 +1,16 @@
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.exe
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.deps.json
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.runtimeconfig.json
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.runtimeconfig.dev.json
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.dll
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\ref\DIO.Series.Asaph.dll
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\bin\Debug\net5.0\DIO.Series.Asaph.pdb
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.csprojAssemblyReference.cache
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.AssemblyInfoInputs.cache
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.AssemblyInfo.cs
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.csproj.CoreCompileInputs.cache
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.dll
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\ref\DIO.Series.Asaph.dll
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.pdb
+C:\Users\CTRL-PLAY\Desktop\DIO\DIO.Series.Asaph\obj\Debug\net5.0\DIO.Series.Asaph.genruntimeconfig.cache
