@@ -41,13 +41,13 @@ namespace DIO.Series.Asaph
                 opcaoUsuario = ObterOpcaoUsuario();
             }
 
-            Console.WriteLine("Obrigado por utilizar nossos serviços.");
+            Console.WriteLine("Finalizando");
             Console.ReadLine();
         }
 
         private static void ExcluirSerie()
         {
-            Console.Write("Digite o id da série: ");
+            Console.Write("Digite o ID da série: ");
             try
             {
                 int indiceSerie = int.Parse(Console.ReadLine());
@@ -55,14 +55,14 @@ namespace DIO.Series.Asaph
             }
             catch(FormatException)
             {
-                Console.WriteLine("Id Invalido");
+                Console.WriteLine("ID Invalido");
             }
             
         }
 
         private static void VisualizarSerie()
         {
-            Console.Write("Digite o id da série: ");
+            Console.Write("Digite o ID da série: ");
             try
             {
 
@@ -81,7 +81,7 @@ namespace DIO.Series.Asaph
 
         private static void AtualizarSerie()
         {
-            Console.Write("Digite o id da série: ");
+            Console.Write("Digite o ID da série: ");
 
             try
             {
@@ -94,7 +94,7 @@ namespace DIO.Series.Asaph
 
 
 
-                    Console.WriteLine("Id :" + lista[indiceSerie].retornaTitulo());
+                    Console.WriteLine("ID :" + lista[indiceSerie].retornaTitulo());
 
                     int entradaGenero = -1;
                     string entradaTitulo = "null";
@@ -120,7 +120,7 @@ namespace DIO.Series.Asaph
 
             catch (FormatException)
             {
-                Console.WriteLine(" -Id Invalido \n -Digite somente numeros para um ID valido \n -Retornando ao Menu Principal ");
+                Console.WriteLine(" -ID Invalido \n -Digite somente numeros para um ID valido \n -Retornando ao Menu Principal ");
             }
         }
         private static void ListarSeries()
@@ -251,7 +251,7 @@ namespace DIO.Series.Asaph
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("DIO Séries a seu dispor!!!");
+            Console.WriteLine("-- Series --");
             Console.WriteLine("Informe a opção desejada:");
 
             Console.WriteLine("1- Listar séries");
